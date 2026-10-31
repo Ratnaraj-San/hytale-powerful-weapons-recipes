@@ -1,0 +1,12 @@
+benchCategories.weapons = Weapons
+
+items.Weapon_Powerful_Daggers.name = Blood Moon Daggers
+items.Recipe_Weapon_Powerful_Daggers.description = [TMP] Teaches the <item is="Daggers_Blood_Moon"/> recipe.
+items.Weapon_Powerful_Shortbow.name = Azure Vortex
+items.Recipe_Weapon_Powerful_Shortbow.description = [TMP] Teaches the <item is="Shortbow_Azure_Vortex"/> recipe.
+items.Weapon_Powerful_Spear.name = Dead Space
+items.Recipe_Weapon_Powerful_Spear.description = [TMP] Teaches the <item is="Spear_Dead_Space"/> recipe.
+items.Weapon_Powerful_Longsword.name = Spirit Calibur
+items.Recipe_Weapon_Powerful_Longsword.description = [TMP] Teaches the <item is="Sword_Spirit_Calibur"/> recipe.
+items.Weapon_Powerful_Katana.name = Zenith
+items.Recipe_Weapon_Powerful_Katana.description = [TMP] Teaches the <item is="Sword_Zenith"/> recipe.

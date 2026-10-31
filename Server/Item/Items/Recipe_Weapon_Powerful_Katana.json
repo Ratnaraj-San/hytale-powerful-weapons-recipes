@@ -1,0 +1,50 @@
+{
+  "Quality": "Legendary",
+  "MaxStack": 1,
+  "Tags": {
+    "Type": [
+      "Recipe"
+    ],
+    "Family": [
+      "Powerful"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Recipe_Page.png",
+  "Consumable": true,
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "LearnRecipe",
+          "ItemId": "Sword_Zenith",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    },
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "LearnRecipe",
+          "ItemId": "Sword_Zenith",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    }
+  },
+  "TranslationProperties": {
+    "Name": "server.items.RecipeItem.name",
+    "Description": "server.items.Recipe_Weapon_Powerful_Katana.description",
+    "NameArguments": {
+      "itemName": "server.items.Weapon_Powerful_Katana.name"
+    }
+  },
+  "Model": "Items/Consumables/Recipes/Recipe.blockymodel",
+  "Texture": "Items/Consumables/Recipes/Recipe_Texture.png",
+  "PlayerAnimationsId": "Item"
+}

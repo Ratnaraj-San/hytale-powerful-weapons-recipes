@@ -1,0 +1,267 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Zenith.name"
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Model": "Items/Zenith.blockymodel",
+  "Texture": "Items/Zenith.png",
+  "Icon": "Icons/ItemsGenerated/Sword_Zenith.png",
+  "PlayerAnimationsId": "Zenith_Animations",
+  "Reticle": "DefaultMelee",
+  "Quality": "Powerful_Weapons_Quality",
+  "ItemLevel": 100,
+  "Categories": [
+    "Items.Weapons",
+    "Powerful_Weapons_Category.Weapons"
+  ],
+  "IconProperties": {
+    "Scale": 0.31,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -42,
+      -48
+    ]
+  },
+  "Utility": {
+    "Compatible": false
+  },
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Longsword"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy",
+      "PowerfulWeaponInvisible"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 12,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "RenderDualWielded": false
+  },
+  "ItemAppearanceConditions": {
+    "PowerfulWeaponInvisible": [
+      {
+        "Condition": [
+          1,
+          1
+        ],
+        "Model": "Items/Projectiles/Projectile.blockymodel",
+        "ModelVFXId": "Zenith_Invisible_VFX"
+      }
+    ],
+    "SignatureEnergy": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.4
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles2",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.75
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 0.8
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles2",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 1,
+              "Z": 0.01
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 0.75
+          }
+        ],
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "PositionOffset": {
+              "Y": -100
+            }
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.4
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 0.85
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles2",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.75
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 0.8
+          },
+          {
+            "SystemId": "Zenith_Signature_Status_Particles2",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 1,
+              "Z": 0.01
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 0.75
+          }
+        ],
+        "ModelVFXId": "Zenith_Signature_VFX"
+      }
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
+  "Scale": 1.1,
+  "Light": {
+    "Color": "#079"
+  },
+  "Particles": [
+    {
+      "SystemId": "Zenith_Particles1",
+      "TargetNodeName": "Blade",
+      "PositionOffset": {
+        "Y": 0.05,
+        "X": -0.5
+      },
+      "TargetEntityPart": "PrimaryItem",
+      "Scale": 1,
+      "DetachedFromModel": false,
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Interactions": {
+    "Primary": "Root_Zenith_Primary",
+    "Secondary": "Root_Zenith_Secondary",
+    "Ability1": "Root_Zenith_Signature"
+  },
+  "State": {
+    "LightOff": {
+      "Light": {
+        "Color": "#000"
+      },
+      "Parent": "Sword_Zenith",
+      "Interactions": {
+        "SwapTo": {
+          "Interactions": [
+            {
+              "Type": "ShinkuToggleItemStateInteraction",
+              "ResetToDefault": true
+            }
+          ]
+        },
+        "SwapFrom": {
+          "Interactions": [
+            {
+              "Type": "ShinkuToggleItemStateInteraction",
+              "ResetToDefault": true
+            },
+            {
+              "Type": "ChangeActiveSlot"
+            }
+          ]
+        }
+      },
+      "Categories": [
+        ""
+      ]
+    }
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "RequiredTierLevel": 2,
+        "Categories": [
+          "Arcane_Weapons"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 40
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 30
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 60
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Void",
+        "Quantity": 25
+      },
+      {
+        "ItemId": "Ingredient_Enkindled_Resource",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 10
+      }
+    ],
+    "KnowledgeRequired": true,
+    "RequiredMemoriesLevel": 3,
+    "TimeSeconds": 8
+  }
+}

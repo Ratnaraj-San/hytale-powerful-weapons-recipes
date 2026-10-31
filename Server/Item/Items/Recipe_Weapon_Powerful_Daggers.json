@@ -1,0 +1,50 @@
+{
+  "Quality": "Legendary",
+  "MaxStack": 1,
+  "Tags": {
+    "Type": [
+      "Recipe"
+    ],
+    "Family": [
+      "Powerful"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Recipe_Page.png",
+  "Consumable": true,
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "LearnRecipe",
+          "ItemId": "Daggers_Blood_Moon",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    },
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "LearnRecipe",
+          "ItemId": "Daggers_Blood_Moon",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    }
+  },
+  "TranslationProperties": {
+    "Name": "server.items.RecipeItem.name",
+    "Description": "server.items.Recipe_Weapon_Powerful_Daggers.description",
+    "NameArguments": {
+      "itemName": "server.items.Weapon_Powerful_Daggers.name"
+    }
+  },
+  "Model": "Items/Consumables/Recipes/Recipe.blockymodel",
+  "Texture": "Items/Consumables/Recipes/Recipe_Texture.png",
+  "PlayerAnimationsId": "Item"
+}

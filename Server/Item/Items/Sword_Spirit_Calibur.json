@@ -1,0 +1,179 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Spirit_Calibur.name"
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Model": "Items/Spirit_Calibur.blockymodel",
+  "Texture": "Items/Spirit_Calibur.png",
+  "Icon": "Icons/ItemsGenerated/Spirit_Calibur.png",
+  "PlayerAnimationsId": "Spirit_Calibur_Animations",
+  "Reticle": "DefaultMelee",
+  "Quality": "Powerful_Weapons_Quality",
+  "ItemLevel": 100,
+  "Categories": [
+    "Items.Weapons",
+    "Powerful_Weapons_Category.Weapons"
+  ],
+  "IconProperties": {
+    "Scale": 0.32,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -45,
+      -47
+    ]
+  },
+  "Utility": {
+    "Compatible": false
+  },
+  "Interactions": {
+    "Primary": "Root_Spirit_Calibur_Primary",
+    "Secondary": "Root_Spirit_Calibur_Secondary_Guard",
+    "Ability1": "Root_Spirit_Calibur_Signature_Vortexstrike"
+  },
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 25,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "RenderDualWielded": false
+  },
+  "ItemAppearanceConditions": {
+    "SignatureEnergy": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.55
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          }
+        ],
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "PositionOffset": {
+              "Y": -100
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          }
+        ],
+        "ModelVFXId": "Trinket_Empowered"
+      }
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
+  "Scale": 1.1,
+  "Particles": [
+    {
+      "TargetNodeName": "Handle",
+      "SystemId": "Spirit_Calibur_Particles1",
+      "PositionOffset": {
+        "X": 0.75,
+        "Y": 0.01
+      }
+    }
+  ],
+  "Light": {
+    "Color": "#b85"
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "RequiredTierLevel": 2,
+        "Categories": [
+          "Arcane_Weapons"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 35
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 25
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 60
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Void",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Enkindled_Resource",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 5
+      }
+    ],
+    "KnowledgeRequired": true,
+    "RequiredMemoriesLevel": 3,
+    "TimeSeconds": 5
+  }
+}

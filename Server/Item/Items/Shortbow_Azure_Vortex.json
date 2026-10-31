@@ -1,0 +1,229 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Azure_Vortex.name"
+  },
+  "Model": "Items/Azure_Vortex.blockymodel",
+  "Texture": "Items/Azure_Vortex.png",
+  "Icon": "Icons/ItemsGenerated/Azure_Vortex.png",
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "PlayerAnimationsId": "Azure_Vortex_Animations",
+  "Reticle": "DefaultMelee",
+  "Quality": "Powerful_Weapons_Quality",
+  "ItemLevel": 10,
+  "Categories": [
+    "Items.Weapons",
+    "Powerful_Weapons_Category.Weapons"
+  ],
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -29,
+      -44
+    ]
+  },
+  "Interactions": {
+    "Primary": "Root_Azure_Vortex_Primary_Shoot",
+    "Secondary": "Root_Azure_Vortex_Secondary_Shoot",
+    "Ability1": "Root_Azure_Vortex_Signature_Volley",
+    "SwapFrom": {
+      "Interactions": [
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "Azure_Vortex_Primary_Charged_Effect"
+        },
+        {
+          "Type": "ChangeActiveSlot"
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bow"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy",
+      "SignatureCharges"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 5.5,
+          "CalculationType": "Additive"
+        }
+      ],
+      "SignatureCharges": [
+        {
+          "Amount": 1,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "ItemAppearanceConditions": {
+    "SignatureCharges": [
+      {
+        "Condition": [
+          1,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "LocalSoundEventId": "SFX_Bow_T2_Signature_Loop_Local",
+        "WorldSoundEventId": "SFX_Bow_T2_Signature_Loop",
+        "ModelVFXId": "Azure_Vortex_Signature_ModelVFX",
+        "Particles": [
+          {
+            "SystemId": "Azure_Vortex_Signature_Status_Particles",
+            "TargetNodeName": "Bow-Top",
+            "PositionOffset": {
+              "X": 0.55
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          },
+          {
+            "SystemId": "Azure_Vortex_Signature_Status_Particles",
+            "TargetNodeName": "Bow-Bot",
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          }
+        ],
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Azure_Vortex_Signature_Status_Particles",
+            "TargetNodeName": "Bow-Top",
+            "PositionOffset": {
+              "X": 0.55
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1
+          },
+          {
+            "SystemId": "Azure_Vortex_Signature_Status_Particles",
+            "TargetNodeName": "Bow-Bot",
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1
+          }
+        ]
+      }
+    ],
+    "SignatureEnergy": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Bow_Signature_Status",
+            "TargetNodeName": "Bow-Top",
+            "PositionOffset": {
+              "X": 0.55
+            },
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          },
+          {
+            "SystemId": "Bow_Signature_Status",
+            "TargetNodeName": "Bow-Bot",
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3
+          }
+        ],
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "PositionOffset": {
+              "Y": 0
+            }
+          },
+          {
+            "SystemId": "Bow_Signature_Status_FP",
+            "TargetNodeName": "Bow-Top",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          }
+        ]
+      }
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "Light": {
+    "Color": "#08a"
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "RequiredTierLevel": 2,
+        "Categories": [
+          "Arcane_Weapons"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 40
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 30
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 60
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Void",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Enkindled_Resource",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 5
+      }
+    ],
+    "RequiredMemoriesLevel": 3,
+    "KnowledgeRequired": true,
+    "TimeSeconds": 8
+  }
+}

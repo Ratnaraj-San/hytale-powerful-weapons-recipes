@@ -1,0 +1,23 @@
+{
+  "Group": "Ratnaraj",
+  "Name": "PowerfulWeaponsRecipes",
+  "Version": "1.0.0",
+  "Description": "",
+  "Authors": [
+    {
+      "Name": "Ratnaraj",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "ServerVersion": ">=0.7.0 <0.8.0",
+  "Dependencies": {
+    "com.shinku:ShinkusPowerfulWeapons": "*"
+  },
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
