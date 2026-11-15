@@ -1,5 +1,8 @@
 {
   "Quality": "Legendary",
+  "Categories": [
+    "Items.Recipes"
+  ],
   "MaxStack": 1,
   "Tags": {
     "Type": [
