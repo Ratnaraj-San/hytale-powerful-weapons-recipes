@@ -185,7 +185,7 @@ public final class ArcaneWeaponsTab {
         return new BsonDocument()
                 .append("Id", new BsonString(TAB_ID))
                 .append("Name", new BsonString("server.benchCategories.weapons"))
-                .append("Icon", new BsonString("Icons/CraftingCategories/Arcane/SwordMini.png"));
+                .append("Icon", new BsonString("Icons/CraftingCategories/Arcane/Spirit_Calibur.png"));
     }
 
     private static PluginManifest tabManifest(PluginManifest plugin) {
