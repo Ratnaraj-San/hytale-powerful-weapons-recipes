@@ -176,6 +176,6 @@
     ],
     "TimeSeconds": 10,
     "KnowledgeRequired": true,
-    "RequiredMemoriesLevel": 3
+    "RequiredMemoriesLevel": 5
   }
 }

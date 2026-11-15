@@ -261,7 +261,7 @@
       }
     ],
     "KnowledgeRequired": true,
-    "RequiredMemoriesLevel": 3,
+    "RequiredMemoriesLevel": 5,
     "TimeSeconds": 8
   }
 }
