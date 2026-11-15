@@ -1,0 +1,30 @@
+{
+    "Group": "Ratnaraj",
+    "Name": "PowerfulWeaponsRecipes",
+    "Version": "2.0.0",
+    "Description": "Crafting recipes for Shinku's Powerful Weapons",
+    "Authors": [
+        {
+            "Name": "Ratnaraj",
+            "Email": "",
+            "Url": ""
+        }
+    ],
+    "Website": "",
+    "ServerVersion": ">=0.7.7 <0.8.0",
+    "Dependencies": {
+        "com.shinku:ShinkusPowerfulWeapons": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "LoadBefore": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "com.ratnaraj.powerfulweaponsrecipes.PowerfulWeaponsRecipes",
+    "IncludesAssetPack": true,
+    "SubPlugins": [
+        
+    ]
+}

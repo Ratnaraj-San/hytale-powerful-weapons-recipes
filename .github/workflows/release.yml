@@ -18,9 +18,9 @@ jobs:
       - name: Stage package
         run: |
           mkdir -p dist
-          cp manifest.json icon-256.png dist/
-          cp -r Common dist/Common
-          cp -r Server dist/Server
+          cp src/main/resources/manifest.json src/main/resources/icon-256.png dist/
+          cp -r src/main/resources/Common dist/Common
+          cp -r src/main/resources/Server dist/Server
 
       - name: Create zip
         run: |

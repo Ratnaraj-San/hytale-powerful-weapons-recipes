@@ -1,0 +1,11 @@
+benchCategories.weapons = Armes
+items.Weapon_Powerful_Daggers.name = Dagues Lune de Sang
+items.Recipe_Weapon_Powerful_Daggers.description = [TMP] Apprend la recette de <item is="Daggers_Blood_Moon"/>.
+items.Weapon_Powerful_Shortbow.name = Vortex Azur
+items.Recipe_Weapon_Powerful_Shortbow.description = [TMP] Apprend la recette de <item is="Shortbow_Azure_Vortex"/>.
+items.Weapon_Powerful_Spear.name = Espace Mort
+items.Recipe_Weapon_Powerful_Spear.description = [TMP] Apprend la recette de <item is="Spear_Dead_Space"/>.
+items.Weapon_Powerful_Longsword.name = Calibur de l'Esprit
+items.Recipe_Weapon_Powerful_Longsword.description = [TMP] Apprend la recette de <item is="Sword_Spirit_Calibur"/>.
+items.Weapon_Powerful_Katana.name = Zénith
+items.Recipe_Weapon_Powerful_Katana.description = [TMP] Apprend la recette de <item is="Sword_Zenith"/>.
