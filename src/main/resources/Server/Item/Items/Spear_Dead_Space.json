@@ -142,7 +142,6 @@
     "BenchRequirement": [
       {
         "Id": "Arcanebench",
-        "RequiredTierLevel": 2,
         "Categories": [
           "Arcane_Weapons"
         ]
