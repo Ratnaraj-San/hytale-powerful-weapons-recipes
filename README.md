@@ -2,6 +2,13 @@
 
 This mod adds crafting recipes for [Shinku's Powerful Weapons](https://www.curseforge.com/hytale/mods/shinkus-powerful-weapons)
 
+
+## ⚠️ v2 - BREAKING CHANGE ⚠️
+
+As of v2, the mod is a `.jar` file, not a `.zip`. If you still have the old `.zip` in your mod list, delete it — otherwise the server logs `Tried to load duplicate asset pack: Ratnaraj:PowerfulWeaponsRecipes` and refuses to load the mod.
+
+The Weapons tab is now added to the Arcanist's Workbench at runtime (no longer a file override), so this mod no longer conflicts with other mods that also modify the bench.
+
 ## Credits & Dependency
 
 All credits go to [NikaidouShinku](https://www.curseforge.com/members/nikaidoushinku/projects), the creator of [Shinku's Powerful Weapons](https://www.curseforge.com/hytale/mods/shinkus-powerful-weapons), who gave me permission to publish this recipes mod.

@@ -28,6 +28,8 @@ public class PowerfulWeaponsRecipes extends JavaPlugin {
 
     @Override
     protected void start() {
+        ArcaneWeaponsTab.registerTab(getLogger(), getDataDirectory(), getManifest());
+
         getLogger().at(Level.INFO).log("[PowerfulWeaponsRecipes] Plugin enabled!");
     }
 
