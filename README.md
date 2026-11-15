@@ -17,29 +17,14 @@ You will need to first install [Shinku's Powerful Weapons](https://www.curseforg
 
 ## Recipes
 
-Recipes are obtainable by defeating the Gobliterator.
-There is a 15% chance the Gobliterator drops one of the five weapon recipes.
+Recipes are obtainable by defeating the Gobliterator : 5% chance to drop one of the five recipes.
 
 ## Crafting
 
 ### Arcanist's Workbench
 
-#### Weapons Tab
-
 A new tab has been added to the Arcanist's Workbench for the Powerful weapons.
-
-
-#### Tier 2 Upgrade
-
-The Arcanist's Workbench now has a Tier 2 upgrade. This upgrade is required in order to craft the weapons.
-Crafting the weapons also requires Memories level 3.
-
-Upgrade cost:
-- 30 Adamantite Ingot
-- 10 Enkindled Sigil
-- 30 Essence of Fire
-- 50 Essence of Ice
-- 200 Essence of the Void
+The new tab is added without conflicting with other mods that also modify the bench.
 
 ### Weapons Craft Costs
 
