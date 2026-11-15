@@ -44,7 +44,7 @@
       },
       {
         "Type": "Choice",
-        "Weight": 15,
+        "Weight": 5,
         "Containers": [
           {
             "Type": "Single",
